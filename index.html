@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>INCOLMER INGENIERÍA S.A.S. | Ingeniería, Mantenimiento y Soluciones para Sectores Hospitalario e Industrial</title>
+    <meta name="description" content="Empresa colombiana especializada en ingeniería, mantenimiento, suministro, instalación y asesoría técnica para equipos, tecnología e infraestructura hospitalaria e industrial. Más de 20 años de experiencia.">
+    <link rel="canonical" href="https://www.incolmeringenieria.com/">
+    <link rel="icon" type="image/png" href="assets/img/logo.png">
+
+    <!-- Open Graph / Social Sharing -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.incolmeringenieria.com/">
+    <meta property="og:title" content="INCOLMER INGENIERÍA S.A.S. | Soluciones Integrales de Ingeniería">
+    <meta property="og:description" content="Mantenimiento preventivo, correctivo, infraestructura hospitalaria e industrial con más de 20 años de experiencia.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1516549655169-df83a0774514?q=80&w=1200&auto=format&fit=crop">
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalBusiness",
+      "name": "INCOLMER INGENIERÍA S.A.S.",
+      "description": "Especialistas en ingeniería, mantenimiento preventivo y correctivo, tecnología biomédica e infraestructura hospitalaria e industrial en Colombia.",
+      "url": "https://www.incolmeringenieria.com/",
+      "telephone": "+573001234567",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Calle Principal",
+        "addressLocality": "Bogotá",
+        "addressRegion": "Bogotá D.C.",
+        "addressCountry": "CO"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "Colombia"
+      }
+    }
+    </script>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand-gold': '#D4AF37',
+                        'brand-gold-dark': '#B8860B',
+                        'brand-dark': '#121212',
+                        'brand-slate': '#1E293B',
+                        'brand-steel': '#94A3B8',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Google Fonts: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        /* Subrayado dorado animado en el menú de escritorio */
+        #desktop-nav a { position: relative; }
+        #desktop-nav a::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -7px;
+            height: 2px;
+            width: 0;
+            background: #D4AF37;
+            border-radius: 9999px;
+            transition: width .3s ease;
+        }
+        #desktop-nav a:hover::after,
+        #desktop-nav a.text-brand-gold::after { width: 100%; }
+        /* Menú móvil: más legible + acento dorado en el enlace activo */
+        #mobile-menu a:not(:last-child) { font-size: 1.05rem; padding-top: .625rem; padding-bottom: .625rem; }
+        #mobile-menu a.text-white { box-shadow: inset 3px 0 0 #D4AF37; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased">
+
+    <!-- Floating Glassmorphism Navbar -->
+    <header class="fixed top-4 left-0 right-0 z-50 px-4">
+        <nav class="max-w-6xl mx-auto rounded-full bg-slate-900/90 backdrop-blur-md border border-brand-gold/40 shadow-2xl shadow-black/20 px-4 sm:px-8 py-3 sm:py-3.5 flex justify-between items-center gap-3 transition-all">
+            <!-- Logo -->
+            <a href="index.html" class="flex items-center gap-3 group shrink-0">
+                <div class="relative h-14 px-1.5 flex items-center justify-center rounded-2xl bg-gradient-to-br from-brand-gold/30 via-brand-gold/10 to-transparent border border-brand-gold/40 shadow-lg shadow-brand-gold/20 overflow-hidden group-hover:shadow-brand-gold/50 group-hover:scale-105 transition-all duration-300">
+                    <img src="assets/img/logo.png" alt="Logo INCOLMER INGENIERÍA S.A.S." class="relative z-10 h-11 w-auto object-contain drop-shadow group-hover:brightness-110 transition-all duration-300">
+                    <span class="absolute inset-0 z-20 bg-gradient-to-r from-transparent via-white/25 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700 ease-out pointer-events-none"></span>
+                </div>
+                <div class="border-l border-white/10 pl-3.5">
+                    <span class="block text-[15px] sm:text-xl font-black tracking-wider text-white group-hover:text-brand-gold transition-colors duration-300">INCOLMER</span>
+                    <span class="block text-[10px] sm:text-[11px] font-bold text-brand-steel uppercase tracking-[0.18em] mt-0.5 group-hover:text-brand-gold/80 transition-colors duration-300">Ingeniería S.A.S.</span>
+                </div>
+            </a>
+
+            <!-- Desktop Links -->
+            <div id="desktop-nav" class="hidden lg:flex items-center gap-7 xl:gap-9 text-[15px] font-semibold">
+                <a href="index.html" class="relative group text-brand-gold transition-colors duration-300">Inicio</a>
+                <a href="nosotros.html" class="relative group text-slate-300 hover:text-brand-gold transition-colors duration-300">Nosotros</a>
+                <a href="servicios.html" class="relative group text-slate-300 hover:text-brand-gold transition-colors duration-300">Servicios</a>
+                <a href="equipos.html" class="relative group text-slate-300 hover:text-brand-gold transition-colors duration-300">Suministros</a>
+            </div>
+
+            <!-- CTA & Mobile Toggle -->
+            <div class="flex items-center gap-4">
+                <a href="contacto.html" class="hidden sm:inline-flex items-center gap-2 group px-6 py-2.5 bg-gradient-to-r from-brand-gold to-brand-gold-dark text-brand-dark font-extrabold text-xs rounded-full shadow-lg shadow-brand-gold/30 hover:scale-105 active:scale-95 transition-all duration-300">
+                    <span>Cotización Formal</span>
+                    <svg class="w-3.5 h-3.5 inline-block transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                </a>
+                <button id="menu-toggle" class="lg:hidden text-white focus:outline-none p-1">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </nav>
+
+        <!-- Mobile Dropdown Menu -->
+        <div id="mobile-menu" class="hidden md:hidden max-w-6xl mx-auto mt-2 bg-slate-900/95 backdrop-blur-md rounded-2xl border border-brand-gold/30 shadow-2xl p-6 space-y-4 text-center">
+            <a href="index.html" class="block text-white font-semibold text-base py-2 hover:text-brand-gold">Inicio</a>
+            <a href="nosotros.html" class="block text-slate-300 font-semibold text-base py-2 hover:text-brand-gold">Nosotros</a>
+            <a href="servicios.html" class="block text-slate-300 font-semibold text-base py-2 hover:text-brand-gold">Servicios</a>
+            <a href="equipos.html" class="block text-slate-300 font-semibold text-base py-2 hover:text-brand-gold">Suministros</a>
+            <a href="contacto.html" class="block w-full py-3 bg-brand-gold text-brand-dark font-extrabold rounded-full text-center shadow-md">Cotización Formal</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- 1. Hero Section -->
+        <section class="min-h-[85vh] pt-36 pb-20 lg:pt-44 lg:pb-32 flex items-center bg-brand-dark text-white relative overflow-hidden">
+            <!-- Decorative Background Grid & Glows -->
+            <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#D4AF37_1px,transparent_1px)] [background-size:24px_24px]"></div>
+            <div class="absolute top-1/4 -right-20 w-96 h-96 bg-brand-gold/10 rounded-full blur-3xl pointer-events-none"></div>
+            
+            <div class="container mx-auto px-6 relative z-10">
+                <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+                    
+                    <div class="text-center lg:text-left">
+                        <span class="inline-flex items-center gap-2 px-4 py-1.5 bg-brand-slate text-brand-gold border border-brand-gold/30 text-xs font-bold uppercase tracking-widest rounded-full mb-6 shadow-md">
+                            <span class="w-2 h-2 rounded-full bg-brand-gold animate-pulse"></span>
+                            Respaldo con más de 20 años de experiencia
+                        </span>
+                        
+                        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white leading-[1.15] mb-6">
+                            Un solo <span class="text-brand-gold">aliado técnico</span> para su infraestructura crítica.
+                        </h1>
+                        
+                        <p class="text-lg text-slate-300 mb-10 leading-relaxed max-w-xl mx-auto lg:mx-0">
+                            <strong>INCOLMER INGENIERÍA S.A.S.</strong> integra ingeniería biomédica, mantenimiento hospitalario, infraestructura y sistemas industriales para garantizar la seguridad, disponibilidad y continuidad operativa de su organización.
+                        </p>
+                        
+                        <div class="flex flex-col sm:flex-row justify-center lg:justify-start gap-4">
+                            <a href="contacto.html" class="px-8 py-4 bg-brand-gold hover:bg-brand-gold-dark text-brand-dark font-extrabold rounded-full transition-all shadow-xl shadow-brand-gold/20 hover:-translate-y-0.5 text-center">
+                                Solicitar Cotización
+                            </a>
+                            <a href="servicios.html" class="px-8 py-4 bg-brand-slate border border-brand-steel/30 text-white font-bold rounded-full hover:bg-slate-800 transition-all shadow-sm hover:-translate-y-0.5 text-center">
+                                Ver Portafolio
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="relative">
+                        <div class="relative mx-auto max-w-md lg:max-w-none">
+                            <div class="absolute -inset-1.5 bg-gradient-to-r from-brand-gold to-brand-steel rounded-3xl blur-xl opacity-30 animate-pulse"></div>
+                            <div class="relative w-full aspect-video rounded-2xl overflow-hidden shadow-2xl border border-brand-gold/30 bg-brand-slate">
+                                <img src="https://images.unsplash.com/photo-1516549655169-df83a0774514?q=80&w=800&auto=format&fit=crop" 
+                                     alt="Ingeniería y Mantenimiento Hospitalario e Industrial - INCOLMER" 
+                                     class="slider-img absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out opacity-100">
+                                <img src="https://images.unsplash.com/photo-1530497610245-94d3c16cda28?q=80&w=800&auto=format&fit=crop" 
+                                     alt="Infraestructura Hospitalaria y Equipos Biomédicos" 
+                                     class="slider-img absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out opacity-0">
+                                <img src="https://images.unsplash.com/photo-1581594693702-fbdc51b2763b?q=80&w=800&auto=format&fit=crop" 
+                                     alt="Mantenimiento Electromecánico e Industrial" 
+                                     class="slider-img absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out opacity-0">
+                            </div>
+                        </div>
+                        <div class="absolute -bottom-6 -left-6 hidden sm:flex items-center gap-4 bg-brand-slate/95 backdrop-blur-md p-4 rounded-2xl shadow-xl border border-brand-gold/30 z-10 text-white">
+                            <div class="w-12 h-12 bg-brand-gold/20 text-brand-gold rounded-xl flex items-center justify-center font-bold text-xl">
+                                20+
+                            </div>
+                            <div>
+                                <p class="text-xs font-bold text-brand-gold uppercase tracking-wider">Años de Trayectoria</p>
+                                <p class="text-sm font-medium text-slate-300">Sector Hospitalario e Industrial</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. Trust Statistics -->
+        <section class="bg-white border-y border-slate-200 py-12 shadow-sm">
+            <div class="container mx-auto px-6">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                    <div class="p-4 border-r last:border-r-0 border-slate-100">
+                        <span class="block text-3xl lg:text-4xl font-extrabold text-brand-dark mb-1">+20 Años</span>
+                        <span class="text-xs font-bold text-slate-500 uppercase tracking-widest">Experiencia Profesional</span>
+                    </div>
+                    <div class="p-4 border-r last:border-r-0 border-slate-100">
+                        <span class="block text-3xl lg:text-4xl font-extrabold text-brand-gold mb-1">24/7</span>
+                        <span class="text-xs font-bold text-slate-500 uppercase tracking-widest">Soporte y Emergencias</span>
+                    </div>
+                    <div class="p-4 border-r last:border-r-0 border-slate-100">
+                        <span class="block text-3xl lg:text-4xl font-extrabold text-brand-dark mb-1">Integral</span>
+                        <span class="text-xs font-bold text-slate-500 uppercase tracking-widest">Soluciones Multidisciplinarias</span>
+                    </div>
+                    <div class="p-4">
+                        <span class="block text-3xl lg:text-4xl font-extrabold text-brand-gold mb-1">100%</span>
+                        <span class="text-xs font-bold text-slate-500 uppercase tracking-widest">Confiabilidad Operativa</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Portafolio de Servicios (6 Líneas Principales) -->
+        <section id="servicios" class="py-24 bg-slate-100">
+            <div class="container mx-auto px-6">
+                <div class="text-center max-w-2xl mx-auto mb-16">
+                    <span class="inline-block px-3.5 py-1.5 bg-brand-dark text-brand-gold text-xs font-bold uppercase tracking-wider rounded-full mb-4 shadow-sm">Portafolio de Servicios</span>
+                    <h2 class="text-3xl lg:text-4xl font-extrabold text-slate-900 mb-4">Unidades de Negocio Especializadas</h2>
+                    <p class="text-slate-600">Soluciones integrales de ingeniería para hospitales, clínicas, laboratorios e industria.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Línea 1 -->
+                    <div class="bg-white rounded-2xl p-8 border border-slate-200/80 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+                        <div>
+                            <div class="w-14 h-14 bg-brand-gold/10 text-brand-gold rounded-2xl flex items-center justify-center font-bold text-2xl mb-6 group-hover:bg-brand-gold group-hover:text-brand-dark transition-all">
+                                🏥
+                            </div>
+                            <h3 class="text-xl font-bold text-slate-900 mb-3">Tecnología Biomédica y Hospitalaria</h3>
+                            <p class="text-slate-600 text-sm leading-relaxed mb-6">Mantenimiento preventivo y correctivo, diagnóstico técnico, inventario, gestión de tecnología y mobiliario hospitalario.</p>
+                            <ul class="text-xs font-semibold text-slate-700 space-y-2 border-t border-slate-100 pt-4">
+                                <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-brand-gold"></span> Equipos de soporte vital y diagnóstico</li>
+                                <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-brand-gold"></span> Hojas de vida y trazabilidad</li>
+                                <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-brand-gold"></span> Asesoría en renovación tecnológica</li>
+                            </ul>
+                        </div>
+                        <div class="pt-6 mt-6 border-t border-slate-100">
+                            <a href="servicios.html" class="text-brand-dark font-bold text-xs uppercase tracking-wider hover:text-brand-gold transition-colors flex items-center gap-2">
+                                Ver detalles &rarr;
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Línea 2 -->
+                    <div class="bg-white rounded-2xl p-8 border border-slate-200/80 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+                        <div>
+                            <div class="w-14 h-14 bg-brand-gold/10 text-brand-gold rounded-2xl flex items-center justify-center font-bold text-2xl mb-6 group-hover:bg-brand-gold group-hover:text-brand-dark transition-all">
+                                ⚡
+                            </div>
+                            <h3 class="text-xl font-bold text-slate-900 mb-3">Infraestructura Hospitalaria</h3>
+                            <p class="text-slate-600 text-sm leading-relaxed mb-6">Mantenimiento y gestión de sistemas técnicos que soportan la operación crítica de instituciones de salud.</p>
+                            <ul class="text-xs font-semibold text-slate-700 space-y-2 border-t border-slate-100 pt-4">
+                                <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-brand-gold"></span> Plantas eléctricas y tableros</li>
+                                <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-brand-gold"></span> Sistemas HVAC y confort térmico</li>
+                                <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-brand-gold"></span> Redes de gases medicinales</li>
+                            </ul>
+                        </div>
+                        <div class="pt-6 mt-6 border-t border-slate-100">
+                            <a href="servicios.html" class="text-brand-dark font-bold text-xs uppercase tracking-wider hover:text-brand-gold transition-colors flex items-center gap-2">
+                                Ver detalles &rarr;
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Línea 3 -->
+                    <div class="bg-white rounded-2xl p-8 border border-slate-200/80 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+                        <div>
+                            <div class="w-14 h-14 bg-brand-gold/10 text-brand-gold rounded-2xl flex items-center justify-center font-bold text-2xl mb-6 group-hover:bg-brand-gold group-hover:text-brand-dark transition-all">
+                                ⚙️
+                            </div>
+                            <h3 class="text-xl font-bold text-slate-900 mb-3">Mantenimiento Industrial</h3>
+                            <p class="text-slate-600 text-sm leading-relaxed mb-6">Soluciones para equipos, maquinaria e infraestructura industrial y comercial con gestión de activos.</p>
+                            <ul class="text-xs font-semibold text-slate-700 space-y-2 border-t border-slate-100 pt-4">
+                                <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-brand-gold"></span> Mantenimiento electromecánico</li>
+                                <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-brand-gold"></span> Compresores y bombas de vacío</li>
+                                <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-brand-gold"></span> Calderas y sistemas auxiliares</li>
+                            </ul>
+                        </div>
+                        <div class="pt-6 mt-6 border-t border-slate-100">
+                            <a href="servicios.html" class="text-brand-dark font-bold text-xs uppercase tracking-wider hover:text-brand-gold transition-colors flex items-center gap-2">
+                                Ver detalles &rarr;
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Línea 4 -->
+                    <div class="bg-white rounded-2xl p-8 border border-slate-200/80 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+                        <div>
+                            <div class="w-14 h-14 bg-brand-gold/10 text-brand-gold rounded-2xl flex items-center justify-center font-bold text-2xl mb-6 group-hover:bg-brand-gold group-hover:text-brand-dark transition-all">
+                                📦
+                            </div>
+                            <h3 class="text-xl font-bold text-slate-900 mb-3">Suministro y Comercialización</h3>
+                            <p class="text-slate-600 text-sm leading-relaxed mb-6">Provisión de equipos, componentes, accesorios y repuestos certificados para aplicaciones hospitalarias e industriales.</p>
+                            <ul class="text-xs font-semibold text-slate-700 space-y-2 border-t border-slate-100 pt-4">
+                                <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-brand-gold"></span> Repuestos biomédicos y electromecánicos</li>
+                                <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-brand-gold"></span> Componentes eléctricos e hidráulicos</li>
+                                <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-brand-gold"></span> Instrumentación y consumibles</li>
+                            </ul>
+                        </div>
+                        <div class="pt-6 mt-6 border-t border-slate-100">
+                            <a href="equipos.html" class="text-brand-dark font-bold text-xs uppercase tracking-wider hover:text-brand-gold transition-colors flex items-center gap-2">
+                                Ver catálogos &rarr;
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Línea 5 -->
+                    <div class="bg-white rounded-2xl p-8 border border-slate-200/80 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+                        <div>
+                            <div class="w-14 h-14 bg-brand-gold/10 text-brand-gold rounded-2xl flex items-center justify-center font-bold text-2xl mb-6 group-hover:bg-brand-gold group-hover:text-brand-dark transition-all">
+                                🔧
+                            </div>
+                            <h3 class="text-xl font-bold text-slate-900 mb-3">Instalación y Proyectos</h3>
+                            <p class="text-slate-600 text-sm leading-relaxed mb-6">Diseño, montaje, adecuación, instalación y puesta en marcha de equipos y redes técnicas especializadas.</p>
+                            <ul class="text-xs font-semibold text-slate-700 space-y-2 border-t border-slate-100 pt-4">
+                                <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-brand-gold"></span> Montajes electromecánicos</li>
+                                <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-brand-gold"></span> Instalación de redes técnicas</li>
+                                <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-brand-gold"></span> Pruebas funcionales y entrega</li>
+                            </ul>
+                        </div>
+                        <div class="pt-6 mt-6 border-t border-slate-100">
+                            <a href="servicios.html" class="text-brand-dark font-bold text-xs uppercase tracking-wider hover:text-brand-gold transition-colors flex items-center gap-2">
+                                Ver detalles &rarr;
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Línea 6 -->
+                    <div class="bg-white rounded-2xl p-8 border border-slate-200/80 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+                        <div>
+                            <div class="w-14 h-14 bg-brand-gold/10 text-brand-gold rounded-2xl flex items-center justify-center font-bold text-2xl mb-6 group-hover:bg-brand-gold group-hover:text-brand-dark transition-all">
+                                💡
+                            </div>
+                            <h3 class="text-xl font-bold text-slate-900 mb-3">Ingeniería, Asesoría y Consultoría</h3>
+                            <p class="text-slate-600 text-sm leading-relaxed mb-6">Servicios especializados para la gestión integral de tecnología, auditorías técnicas y planes de mantenimiento.</p>
+                            <ul class="text-xs font-semibold text-slate-700 space-y-2 border-t border-slate-100 pt-4">
+                                <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-brand-gold"></span> Auditorías y diagnósticos técnicos</li>
+                                <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-brand-gold"></span> Planes de mantenimiento preventivo</li>
+                                <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-brand-gold"></span> Conceptos técnicos y asesoría</li>
+                            </ul>
+                        </div>
+                        <div class="pt-6 mt-6 border-t border-slate-100">
+                            <a href="servicios.html" class="text-brand-dark font-bold text-xs uppercase tracking-wider hover:text-brand-gold transition-colors flex items-center gap-2">
+                                Ver detalles &rarr;
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Core Values Section -->
+        <section class="py-24 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center max-w-2xl mx-auto mb-16">
+                    <span class="inline-block px-3.5 py-1.5 bg-brand-gold/10 text-brand-gold-dark text-xs font-bold uppercase tracking-wider rounded-full mb-4">Cultura Corporativa</span>
+                    <h2 class="text-3xl lg:text-4xl font-extrabold text-slate-900 mb-4">Nuestros 8 Valores Fundamentales</h2>
+                    <p class="text-slate-600">Pilares éticos y profesionales que guían cada uno de nuestros servicios y relaciones con los clientes.</p>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="p-6 bg-slate-50 rounded-2xl border border-slate-100 hover:border-brand-gold/50 transition-all">
+                        <h4 class="text-lg font-bold text-brand-dark mb-2">01. Integridad</h4>
+                        <p class="text-xs text-slate-600 leading-relaxed">Transparencia, honestidad y ética en nuestras relaciones con clientes, proveedores y aliados.</p>
+                    </div>
+                    <div class="p-6 bg-slate-50 rounded-2xl border border-slate-100 hover:border-brand-gold/50 transition-all">
+                        <h4 class="text-lg font-bold text-brand-dark mb-2">02. Excelencia Técnica</h4>
+                        <p class="text-xs text-slate-600 leading-relaxed">Conocimiento, experiencia y rigor técnico para desarrollar soluciones confiables y eficientes.</p>
+                    </div>
+                    <div class="p-6 bg-slate-50 rounded-2xl border border-slate-100 hover:border-brand-gold/50 transition-all">
+                        <h4 class="text-lg font-bold text-brand-dark mb-2">03. Seguridad</h4>
+                        <p class="text-xs text-slate-600 leading-relaxed">Protegemos a las personas, equipos e instalaciones mediante prácticas seguras y responsables.</p>
+                    </div>
+                    <div class="p-6 bg-slate-50 rounded-2xl border border-slate-100 hover:border-brand-gold/50 transition-all">
+                        <h4 class="text-lg font-bold text-brand-dark mb-2">04. Cumplimiento</h4>
+                        <p class="text-xs text-slate-600 leading-relaxed">Honramos nuestros compromisos contractuales, técnicos, comerciales y legales a cabalidad.</p>
+                    </div>
+                    <div class="p-6 bg-slate-50 rounded-2xl border border-slate-100 hover:border-brand-gold/50 transition-all">
+                        <h4 class="text-lg font-bold text-brand-dark mb-2">05. Servicio</h4>
+                        <p class="text-xs text-slate-600 leading-relaxed">Entendemos las necesidades de nuestros clientes ofreciendo respuestas oportunas y claras.</p>
+                    </div>
+                    <div class="p-6 bg-slate-50 rounded-2xl border border-slate-100 hover:border-brand-gold/50 transition-all">
+                        <h4 class="text-lg font-bold text-brand-dark mb-2">06. Confiabilidad</h4>
+                        <p class="text-xs text-slate-600 leading-relaxed">Construimos relaciones de largo plazo mediante resultados consistentes y sustentados.</p>
+                    </div>
+                    <div class="p-6 bg-slate-50 rounded-2xl border border-slate-100 hover:border-brand-gold/50 transition-all">
+                        <h4 class="text-lg font-bold text-brand-dark mb-2">07. Innovación</h4>
+                        <p class="text-xs text-slate-600 leading-relaxed">Incorporamos nuevas tecnologías y metodologías para mejorar nuestros servicios.</p>
+                    </div>
+                    <div class="p-6 bg-slate-50 rounded-2xl border border-slate-100 hover:border-brand-gold/50 transition-all">
+                        <h4 class="text-lg font-bold text-brand-dark mb-2">08. Responsabilidad</h4>
+                        <p class="text-xs text-slate-600 leading-relaxed">Impacto positivo sobre las organizaciones y el entorno con responsabilidad social y ambiental.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Mission & Vision -->
+        <section class="py-24 bg-brand-dark text-white relative overflow-hidden">
+            <div class="container mx-auto px-6 relative z-10">
+                <div class="grid md:grid-cols-2 gap-12">
+                    <div class="bg-brand-slate p-8 sm:p-10 rounded-3xl border border-brand-gold/30 shadow-xl">
+                        <span class="text-brand-gold font-bold text-xs uppercase tracking-widest block mb-3">Misión Institucional</span>
+                        <h3 class="text-2xl font-extrabold mb-4 text-white">Compromiso con la Continuidad Operativa</h3>
+                        <p class="text-slate-300 text-sm leading-relaxed">
+                            Brindar soluciones integrales de ingeniería, mantenimiento, suministro, instalación y asesoría técnica para equipos, tecnología e infraestructura hospitalaria e industrial, contribuyendo a la seguridad, confiabilidad, disponibilidad y continuidad operativa de nuestros clientes.
+                        </p>
+                    </div>
+                    <div class="bg-brand-slate p-8 sm:p-10 rounded-3xl border border-brand-gold/30 shadow-xl">
+                        <span class="text-brand-gold font-bold text-xs uppercase tracking-widest block mb-3">Visión 2030</span>
+                        <h3 class="text-2xl font-extrabold mb-4 text-white">Liderazgo y Reconocimiento Nacional</h3>
+                        <p class="text-slate-300 text-sm leading-relaxed">
+                            Para el año 2030, INCOLMER INGENIERÍA S.A.S. será reconocida como una empresa especializada y confiable en soluciones integrales de ingeniería, mantenimiento y tecnología para los sectores hospitalario e industrial, con presencia progresiva en diferentes regiones del país.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. CTA Section -->
+        <section class="py-24 bg-gradient-to-r from-brand-slate to-brand-dark text-white relative overflow-hidden border-t border-brand-gold/20">
+            <div class="container mx-auto px-6 relative z-10 text-center max-w-3xl">
+                <span class="inline-block px-3.5 py-1.5 bg-brand-gold/20 text-brand-gold text-xs font-bold uppercase tracking-wider rounded-full mb-6">Atención Prioritaria</span>
+                <h2 class="text-3xl lg:text-5xl font-extrabold mb-6 text-white">¿Listo para optimizar su infraestructura crítica?</h2>
+                <p class="text-slate-300 mb-10 text-lg leading-relaxed">Conecte con más de 20 años de experiencia profesional en ingeniería biomédica y mantenimiento industrial.</p>
+                <div class="flex flex-wrap justify-center gap-4">
+                    <a href="contacto.html" class="px-8 py-4 bg-brand-gold hover:bg-brand-gold-dark text-brand-dark font-extrabold rounded-full transition-all shadow-xl shadow-brand-gold/30">Solicitar Cotización Formal</a>
+                    <a href="https://wa.me/573001234567" target="_blank" class="px-8 py-4 bg-emerald-600 hover:bg-emerald-700 text-white font-extrabold rounded-full transition-all shadow-xl">WhatsApp Directo</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-12 bg-brand-dark text-slate-400 border-t border-slate-800">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-12 mb-12">
+                <div class="col-span-2">
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="w-12 h-12 flex items-center justify-center">
+                            <img src="assets/img/logo.png" alt="Logo INCOLMER INGENIERÍA S.A.S." class="w-full h-full object-contain brightness-0 invert">
+                        </div>
+                        <span class="text-lg font-black text-white">INCOLMER INGENIERÍA S.A.S.</span>
+                    </div>
+                    <p class="text-sm max-w-xs mb-6 text-slate-400">
+                        Ingeniería, mantenimiento y soluciones integrales para los sectores hospitalario e industrial en Colombia.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-xs font-bold text-white uppercase tracking-widest mb-6">Navegación</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="nosotros.html" class="hover:text-brand-gold transition-colors">Nosotros</a></li>
+                        <li><a href="servicios.html" class="hover:text-brand-gold transition-colors">Servicios Técnicos</a></li>
+                        <li><a href="equipos.html" class="hover:text-brand-gold transition-colors">Suministros</a></li>
+                        <li><a href="contacto.html" class="hover:text-brand-gold transition-colors">Contacto</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xs font-bold text-white uppercase tracking-widest mb-6">Legal (Colombia)</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="#" class="hover:text-brand-gold transition-colors">Política de Privacidad</a></li>
+                        <li><a href="#" class="hover:text-brand-gold transition-colors">Tratamiento de Datos</a></li>
+                        <li><a href="#" class="hover:text-brand-gold transition-colors">Términos y Condiciones</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="pt-8 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-slate-500 text-xs">© 2026 INCOLMER INGENIERÍA S.A.S. Todos los derechos reservados.</p>
+                <div class="flex items-center gap-2">
+                    <span class="w-2 h-2 bg-emerald-500 rounded-full animate-pulse"></span>
+                    <span class="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Sistemas Operativos 24/7</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts con arquitectura de módulos -->
+    <script type="module" src="assets/js/app.js"></script>
+</body>
+</html>
