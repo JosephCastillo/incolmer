@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
  * Mobile Navigation Toggle
  */
 function initNavigation() {
-    const menuBtn = document.getElementById('menu-btn');
+    const menuBtn = document.getElementById('menu-toggle');
     const mobileMenu = document.getElementById('mobile-menu');
 
     if (menuBtn && mobileMenu) {
