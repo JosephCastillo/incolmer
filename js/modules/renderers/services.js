@@ -21,7 +21,10 @@ const cardTemplate = service => `
     <article class="bg-white rounded-2xl border border-slate-200/80 shadow-sm hover:-translate-y-1 hover:shadow-2xl transition duration-300 overflow-hidden flex flex-col justify-between group">
         <div>
             <div class="relative aspect-video overflow-hidden bg-slate-100">
-                <img src="${escapeHtml(service.image)}" alt="${escapeHtml(service.title)} - INCOLMER INGENIERÍA S.A.S." loading="lazy" width="600" height="400" class="w-full h-full object-cover rounded-t-2xl transition-transform duration-700 group-hover:scale-105">
+                <picture>
+                    <source srcset="${escapeHtml(service.imageWebp)}" type="image/webp">
+                    <img src="${escapeHtml(service.image)}" alt="${escapeHtml(service.title)} - INCOLMER INGENIERÍA S.A.S." loading="lazy" width="960" height="540" class="w-full h-full object-cover rounded-t-2xl transition-transform duration-700 group-hover:scale-105">
+                </picture>
                 <div class="absolute top-4 left-4">
                     <div class="w-12 h-12 bg-white/90 backdrop-blur-md text-brand-gold rounded-xl flex items-center justify-center shadow-md">
                         ${service.icon}

@@ -11,6 +11,6 @@ export const WHATSAPP_URL = `https://wa.me/${WHATSAPP_NUMBER}`;
 export const CONTACT = {
     phoneDisplay: '+57 300 123 4567',
     landlineDisplay: '+57 (1) 234 5678',
-    email: 'contacto@incolmeringenieria.com',
+    email: 'contacto@incolmer.com',
     location: 'Bogotá D.C., Colombia'
 };

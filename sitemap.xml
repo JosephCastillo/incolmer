@@ -1,28 +1,110 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
     <url>
-        <loc>https://www.incolmeringenieria.com/</loc>
+        <loc>https://incolmer.com/</loc>
+        <lastmod>2026-10-06</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
+        <image:image>
+            <image:loc>https://incolmer.com/assets/img/og-portada-incolmer.jpg</image:loc>
+            <image:title>INCOLMER Ingeniería y Mantenimiento de Infraestructura Crítica</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://incolmer.com/assets/img/hero-infraestructura-critica.jpg</image:loc>
+            <image:title>Instalaciones industriales y redes técnicas de una planta de producción</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://incolmer.com/assets/img/hero-mantenimiento-planta.jpg</image:loc>
+            <image:title>Mantenimiento electromecánico en un tablero eléctrico</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://incolmer.com/assets/img/hero-calderas-industrial.jpg</image:loc>
+            <image:title>Salas de máquinas, calderas y sistemas auxiliares</image:title>
+        </image:image>
     </url>
     <url>
-        <loc>https://www.incolmeringenieria.com/nosotros.html</loc>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://www.incolmeringenieria.com/servicios.html</loc>
+        <loc>https://incolmer.com/servicios.html</loc>
+        <lastmod>2026-10-06</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://incolmer.com/assets/img/og-servicios-incolmer.jpg</image:loc>
+            <image:title>Servicios de Ingeniería y Mantenimiento INCOLMER</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://incolmer.com/assets/img/servicio-mantenimiento-maquinaria.jpg</image:loc>
+            <image:title>Mantenimiento preventivo de maquinaria industrial</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://incolmer.com/assets/img/servicio-instalaciones-tecnicas.jpg</image:loc>
+            <image:title>Tableros de distribución y redes eléctricas</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://incolmer.com/assets/img/servicio-mantenimiento-electromecanico.jpg</image:loc>
+            <image:title>Conjunto motor, reductor y bomba en mantenimiento</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://incolmer.com/assets/img/servicio-suministro-repuestos.jpg</image:loc>
+            <image:title>Repuestos, componentes y equipos técnicos</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://incolmer.com/assets/img/servicio-instalacion-proyectos.jpg</image:loc>
+            <image:title>Instalación de redes técnicas y montajes electromecánicos</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://incolmer.com/assets/img/servicio-ingenieria-asesoria.jpg</image:loc>
+            <image:title>Ingenieros analizando planos para un plan de mantenimiento</image:title>
+        </image:image>
     </url>
     <url>
-        <loc>https://www.incolmeringenieria.com/equipos.html</loc>
+        <loc>https://incolmer.com/nosotros.html</loc>
+        <lastmod>2026-10-06</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://incolmer.com/assets/img/og-nosotros-incolmer.jpg</image:loc>
+            <image:title>Nosotros y Objeto Social INCOLMER INGENIERÍA</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://incolmer.com/assets/img/nosotros-equipo-tecnico.jpg</image:loc>
+            <image:title>Equipo de ingenieros de INCOLMER en una instalación industrial</image:title>
+        </image:image>
     </url>
     <url>
-        <loc>https://www.incolmeringenieria.com/contacto.html</loc>
+        <loc>https://incolmer.com/equipos.html</loc>
+        <lastmod>2026-10-06</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://incolmer.com/assets/img/og-suministros-incolmer.jpg</image:loc>
+            <image:title>Suministro de Equipos y Repuestos INCOLMER</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://incolmer.com/assets/img/equipo-maquinaria-produccion.jpg</image:loc>
+            <image:title>Centro de mecanizado CNC para proceso de producción</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://incolmer.com/assets/img/equipo-plantas-electricas.jpg</image:loc>
+            <image:title>Subestación y planta eléctrica de emergencia</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://incolmer.com/assets/img/equipo-hvac-climatizacion.jpg</image:loc>
+            <image:title>Unidades manejadoras de aire y sistemas de climatización</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://incolmer.com/assets/img/equipo-componentes-tecnicos.jpg</image:loc>
+            <image:title>Válvulas, sensores, filtros y componentes técnicos</image:title>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://incolmer.com/contacto.html</loc>
+        <lastmod>2026-10-06</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
+        <image:image>
+            <image:loc>https://incolmer.com/assets/img/og-contacto-incolmer.jpg</image:loc>
+            <image:title>Contacto y Cotizaciones INCOLMER INGENIERÍA</image:title>
+        </image:image>
     </url>
 </urlset>
