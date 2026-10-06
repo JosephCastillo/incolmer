@@ -8,7 +8,7 @@
     <title>Nosotros y Objeto Social | INCOLMER INGENIERÍA S.A.S.</title>
     <meta name="description" content="Conozca el objeto social, posicionamiento, misión, visión 2030, valores corporativos y estructura organizacional de INCOLMER INGENIERÍA S.A.S.">
     <link rel="canonical" href="https://www.incolmeringenieria.com/nosotros.html">
-    <link rel="icon" type="image/png" href="assets/img/logo.png">
+    <link rel="icon" type="image/png" href="assets/favicon.png">
 
     <!-- Open Graph / Social Sharing -->
     <meta property="og:type" content="website">
@@ -19,46 +19,11 @@
 
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        'brand-gold': '#D4AF37',
-                        'brand-gold-dark': '#B8860B',
-                        'brand-dark': '#121212',
-                        'brand-slate': '#1E293B',
-                        'brand-steel': '#94A3B8',
-                    },
-                    fontFamily: {
-                        sans: ['Inter', 'system-ui', 'sans-serif'],
-                    }
-                }
-            }
-        }
-    </script>
+    <script src="js/config/tailwind.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <style>
-        body { font-family: 'Inter', sans-serif; }
-        /* Subrayado dorado animado en el menú de escritorio */
-        #desktop-nav a { position: relative; }
-        #desktop-nav a::after {
-            content: '';
-            position: absolute;
-            left: 0;
-            bottom: -7px;
-            height: 2px;
-            width: 0;
-            background: #D4AF37;
-            border-radius: 9999px;
-            transition: width .3s ease;
-        }
-        #desktop-nav a:hover::after,
-        #desktop-nav a.text-brand-gold::after { width: 100%; }
-        /* Menú móvil: más legible + acento dorado en el enlace activo */
-        #mobile-menu a:not(:last-child) { font-size: 1.05rem; padding-top: .625rem; padding-bottom: .625rem; }
-        #mobile-menu a.text-white { box-shadow: inset 3px 0 0 #D4AF37; }
-    </style>
+
+    <!-- Estilos propios de la aplicación -->
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body class="bg-slate-50 text-slate-800 antialiased">
 
@@ -328,7 +293,7 @@
         </div>
     </footer>
 
-    <!-- Scripts con arquitectura de módulos -->
-    <script type="module" src="assets/js/app.js"></script>
+    <!-- Scripts de la aplicación -->
+    <script type="module" src="js/main.js"></script>
 </body>
 </html>

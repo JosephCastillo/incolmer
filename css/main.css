@@ -1,0 +1,49 @@
+/**
+ * main.css
+ * Estilos globales de INCOLMER INGENIERÍA S.A.S.
+ * Complementa las utilidades de Tailwind CSS con los efectos que requieren
+ * pseudo-elementos y media queries (subrayado animado del menú, acento del
+ * enlace activo, etc.), que no se pueden expresar con clases utilitarias.
+ */
+
+:root {
+    --color-brand-gold: #D4AF37;
+}
+
+/* Base */
+body {
+    font-family: 'Inter', system-ui, sans-serif;
+}
+
+/* Navegación de escritorio: subrayado dorado animado */
+#desktop-nav a {
+    position: relative;
+}
+
+#desktop-nav a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -7px;
+    height: 2px;
+    width: 0;
+    background: var(--color-brand-gold);
+    border-radius: 9999px;
+    transition: width .3s ease;
+}
+
+#desktop-nav a:hover::after,
+#desktop-nav a.text-brand-gold::after {
+    width: 100%;
+}
+
+/* Menú móvil: legibilidad y acento dorado en el enlace activo */
+#mobile-menu a:not(:last-child) {
+    font-size: 1.05rem;
+    padding-top: .625rem;
+    padding-bottom: .625rem;
+}
+
+#mobile-menu a.text-white {
+    box-shadow: inset 3px 0 0 var(--color-brand-gold);
+}

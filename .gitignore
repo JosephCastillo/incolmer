@@ -1,4 +1,8 @@
+# Ignore directories
 docs/
+.vscode/
+
+# Ignore files 
 bio-ingenieria.code-workspace
 netlify.toml
 Modelfile
