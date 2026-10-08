@@ -11,11 +11,11 @@
             <image:title>INCOLMER Ingeniería y Mantenimiento de Infraestructura Crítica</image:title>
         </image:image>
         <image:image>
-            <image:loc>https://incolmer.com/assets/img/hero-infraestructura-critica.jpg</image:loc>
-            <image:title>Instalaciones industriales y redes técnicas de una planta de producción</image:title>
+            <image:loc>https://incolmer.com/assets/img/hero-ventilador-mecanico.jpg</image:loc>
+            <image:title>Ventilador mecánico en una instalación hospitalaria</image:title>
         </image:image>
         <image:image>
-            <image:loc>https://incolmer.com/assets/img/hero-mantenimiento-planta.jpg</image:loc>
+            <image:loc>https://incolmer.com/assets/img/hero-mantenimiento-planta2.jpg</image:loc>
             <image:title>Mantenimiento electromecánico en un tablero eléctrico</image:title>
         </image:image>
         <image:image>
@@ -67,7 +67,7 @@
             <image:title>Nosotros y Objeto Social INCOLMER INGENIERÍA</image:title>
         </image:image>
         <image:image>
-            <image:loc>https://incolmer.com/assets/img/nosotros-equipo-tecnico.jpg</image:loc>
+            <image:loc>https://incolmer.com/assets/img/nosotros-equipo-tecnico2.jpg</image:loc>
             <image:title>Equipo de ingenieros de INCOLMER en una instalación industrial</image:title>
         </image:image>
     </url>

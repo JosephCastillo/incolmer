@@ -47,3 +47,16 @@ body {
 #mobile-menu a.text-white {
     box-shadow: inset 3px 0 0 var(--color-brand-gold);
 }
+
+/* Logotipo: texto metálico plateado claro (pensado para fondos oscuros) */
+.text-metal {
+    background-image: linear-gradient(180deg, #ffffff 0%, #f2f2f2 26%, #cfcfcf 50%, #ededed 74%, #dcdcdc 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+/* Al pasar el cursor sobre el logotipo, el metal se vuelve dorado */
+.group:hover .text-metal {
+    background-image: linear-gradient(115deg, #f7df8c 0%, #d4af37 45%, #f2e4ac 72%, #b8860b 100%);
+}

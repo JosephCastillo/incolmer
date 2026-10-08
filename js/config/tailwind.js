@@ -13,7 +13,8 @@ tailwind.config = {
                 'brand-gold-dark': '#B8860B',
                 'brand-dark': '#121212',
                 'brand-slate': '#1E293B',
-                'brand-steel': '#94A3B8'
+                'brand-steel': '#94A3B8',
+                'brand-silver': '#C0C0C0'
             },
             fontFamily: {
                 sans: ['Inter', 'system-ui', 'sans-serif']

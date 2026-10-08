@@ -10,15 +10,19 @@ const escapeHtml = value => String(value).replace(/[&<>"']/g, char => ({
     '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'
 })[char]);
 
-const featureList = features => features
-    .map(feature => `
-        <li class="flex items-center gap-2">
-            <span class="w-1.5 h-1.5 rounded-full bg-brand-gold"></span> ${escapeHtml(feature)}
-        </li>`)
-    .join('');
+const featureList = features => `
+        <p class="text-[11px] font-bold text-slate-900 uppercase tracking-wider mb-3">Principales líneas de servicio</p>
+        <ul class="text-xs font-medium text-slate-700 space-y-2.5">
+        ${features
+            .map(feature => `
+            <li class="flex items-start gap-2">
+                <span class="w-1.5 h-1.5 rounded-full bg-brand-gold mt-1.5 shrink-0"></span> ${escapeHtml(feature)}
+            </li>`)
+            .join('')}
+        </ul>`;
 
 const cardTemplate = service => `
-    <article class="bg-white rounded-2xl border border-slate-200/80 shadow-sm hover:-translate-y-1 hover:shadow-2xl transition duration-300 overflow-hidden flex flex-col justify-between group">
+    <article id="${escapeHtml(service.id)}" class="bg-white rounded-2xl border border-slate-200/80 shadow-sm hover:-translate-y-1 hover:shadow-2xl transition duration-300 overflow-hidden flex flex-col justify-between group scroll-mt-32">
         <div>
             <div class="relative aspect-video overflow-hidden bg-slate-100">
                 <picture>
@@ -34,9 +38,9 @@ const cardTemplate = service => `
             <div class="p-8">
                 <h3 class="text-xl font-bold text-slate-900 mb-3">${escapeHtml(service.title)}</h3>
                 <p class="text-slate-600 text-sm leading-relaxed mb-6">${escapeHtml(service.description)}</p>
-                <ul class="text-xs font-semibold text-slate-700 uppercase tracking-wider space-y-2.5 border-t border-slate-100 pt-4">
+                <div class="border-t border-slate-100 pt-4 mb-6">
                     ${featureList(service.features)}
-                </ul>
+                </div>
             </div>
         </div>
         <div class="p-8 pt-0">
