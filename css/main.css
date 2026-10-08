@@ -11,8 +11,16 @@
 }
 
 /* Base */
+html {
+    /* Tipografía fluida: el tamaño base se adapta al ancho del dispositivo.
+       Como Tailwind usa rem, toda la interfaz escala proporcionalmente. */
+    font-size: clamp(15px, calc(13px + 0.4vw), 18px);
+}
+
 body {
     font-family: 'Inter', system-ui, sans-serif;
+    /* Evita scroll horizontal causado por elementos decorativos fuera del flujo */
+    overflow-x: hidden;
 }
 
 /* Navegación de escritorio: subrayado dorado animado */
