@@ -78,23 +78,11 @@
         <priority>0.8</priority>
         <image:image>
             <image:loc>https://incolmer.com/assets/img/og-suministros-incolmer.jpg</image:loc>
-            <image:title>Suministro de Equipos y Repuestos INCOLMER</image:title>
+            <image:title>Suministro y Soluciones Técnicas INCOLMER</image:title>
         </image:image>
         <image:image>
             <image:loc>https://incolmer.com/assets/img/equipo-maquinaria-produccion.jpg</image:loc>
-            <image:title>Centro de mecanizado CNC para proceso de producción</image:title>
-        </image:image>
-        <image:image>
-            <image:loc>https://incolmer.com/assets/img/equipo-plantas-electricas.jpg</image:loc>
-            <image:title>Subestación y planta eléctrica de emergencia</image:title>
-        </image:image>
-        <image:image>
-            <image:loc>https://incolmer.com/assets/img/equipo-hvac-climatizacion.jpg</image:loc>
-            <image:title>Unidades manejadoras de aire y sistemas de climatización</image:title>
-        </image:image>
-        <image:image>
-            <image:loc>https://incolmer.com/assets/img/equipo-componentes-tecnicos.jpg</image:loc>
-            <image:title>Válvulas, sensores, filtros y componentes técnicos</image:title>
+            <image:title>Equipos, maquinaria y soluciones técnicas de suministro</image:title>
         </image:image>
     </url>
     <url>

@@ -48,15 +48,20 @@ body {
     box-shadow: inset 3px 0 0 var(--color-brand-gold);
 }
 
-/* Logotipo: texto metálico plateado claro (pensado para fondos oscuros) */
+/* Logotipo: texto gris perla #9C9D95 con bisel (emboss) para fondos oscuros #101728 */
 .text-metal {
-    background-image: linear-gradient(180deg, #ffffff 0%, #f2f2f2 26%, #cfcfcf 50%, #ededed 74%, #dcdcdc 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
+    color: #9C9D95;
+    text-shadow:
+        -1px -1px 1px rgba(255, 255, 255, 0.12),
+        1px 1px 1px rgba(0, 0, 0, 0.85),
+        0 2px 6px rgba(0, 0, 0, 0.5);
 }
 
 /* Al pasar el cursor sobre el logotipo, el metal se vuelve dorado */
 .group:hover .text-metal {
-    background-image: linear-gradient(115deg, #f7df8c 0%, #d4af37 45%, #f2e4ac 72%, #b8860b 100%);
+    color: #D4AF37;
+    text-shadow:
+        -1px -1px 1px rgba(255, 255, 255, 0.18),
+        1px 1px 1px rgba(0, 0, 0, 0.85),
+        0 2px 6px rgba(0, 0, 0, 0.5);
 }
